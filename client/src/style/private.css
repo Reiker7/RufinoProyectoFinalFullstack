@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+}
+.push {
+    margin-left: auto;
+}
+
+.btnP {
+  color:  #cccccc;
+  border-radius: 30px;
+  text-shadow: 0px 2px 0px #12212f;
+  background: var(--color-blue3);
+  padding: 5px 5px;
+  text-decoration: none; 
+
+}

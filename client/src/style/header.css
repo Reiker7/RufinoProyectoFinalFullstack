@@ -1,0 +1,10 @@
+.header {
+    color: #cccccc;
+    text-shadow: 0px 2px 0px #0a0b0c;
+    text-decoration: none; 
+    background-color: var(--color-blue4);
+    opacity: 100%;
+    width: 100%;
+    border: auto;
+    
+}

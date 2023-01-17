@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.text {
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P';
+    color: #FFFFFF;
+    text-align: center;
+}
+.nav2 {
+    background-color: lightgray;
+}
+.e404 {
+    background-color: #000000;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/A_black_image.jpg");
+    
+}
+
+section.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    height: 100vh;
+}
+
+section.notFound h1 {
+    color: red;
+    font-size: 100px;
+}
+
+section.notFound h2 {
+    font-size: 50px;
+}
+
+section.notFound h1, h2, h3 {
+    margin-bottom: 40px;
+}
+
+div.text {
+    height: 50vh;
+}
+
+div.text a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(78, 99, 216);
+
+}
+
+div.text a:hover {
+    text-decoration: none;
+    color: red;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    section.notFound {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    section.notFound div.img img {
+        width: 70vw;
+        height: auto;
+    }
+    section.notFound h1 {
+        font-size: 50px;
+    }
+    section.notFound h2 {
+        font-size: 25px;
+    }
+    div.text a:active {
+    color: red;
+    text-decoration: underline; 
+  }
+}
