@@ -4,12 +4,13 @@ const apiEndpointDelete = "http://localhost:3000/api/favorites/delete/";
 
 
 const getclient = localStorage.getItem("loggedUser");
-const token = JSON.parse(getclient).token
+if (getclient) { const token = JSON.parse(getclient).token
 
 const optionsWithToken = {
   headers: {
     "x-auth-token": token
     }
+}
 }
 
 const handlePostFav = async (datos, userNickId, nickname, setDatos) => {

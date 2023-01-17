@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Grid } from "@mui/material";
-import BasicButtons from "./BasicButtons";
+import BasicButtonsSave from "./BasicButtonsSave";
 
 function CardGame({ datos, nickname, userNickId }) {
   console.log(datos);
@@ -117,7 +117,7 @@ function CardGame({ datos, nickname, userNickId }) {
               <TableCell>{datos.platformId}</TableCell>
               <TableCell align="right">{datos.gameId}</TableCell>
               <TableCell align="right">
-                <BasicButtons
+                <BasicButtonsSave
                   datosFav={datos}
                   key={datos.gameId}
                   nickname={nickname}
