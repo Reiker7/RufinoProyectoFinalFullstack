@@ -10,3 +10,5 @@ export const imguserapi =
   "https://ddragon.leagueoflegends.com/cdn/12.23.1/img/profileicon/";
 export const rotationchampapi = `https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${process.env.REACT_APP_LOL}`;
 export const imgChampSquare = `https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/`;
+
+
