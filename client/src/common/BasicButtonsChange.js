@@ -10,8 +10,9 @@ function BasicButtonsChange({ input, setNickChange, setLoading }) {
   const nickChange = user.nickgame;
 
   const apiEndpointFav =
-    "http://localhost:3000/api/favorites/put/" + nickChange;
-  const apiEndpointUser = "http://localhost:3000/api/users/put/" + nickChange;
+    `${process.env.REACT_APP_SERVER}/api/favorites/put/` + nickChange;
+  const apiEndpointUser =
+    `${process.env.REACT_APP_SERVER}/api/favorites/put/` + nickChange;
 
   const handleChange = async () => {
     let usuario = JSON.parse(localStorage.getItem("loggedUser"));

@@ -8,7 +8,7 @@ import UserConsumer from "../hooks/useDatos";
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
-const urlauth = "http://localhost:3000/api/auths";
+
 
 function Login({ log, setlog }) {
   const [user, setUser] = UserConsumer();
@@ -25,7 +25,7 @@ function Login({ log, setlog }) {
 
     try {
       const resUser = await axios.post(
-        "http://localhost:3000/api/auths",
+        `${process.env.REACT_APP_SERVER}/api/auths`,
         datouser
       );
   

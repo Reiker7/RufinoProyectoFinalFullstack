@@ -10,7 +10,7 @@ import { Grid } from "@mui/material";
 import BasicButtonsSave from "./BasicButtonsSave";
 
 function CardGame({ datos, nickname, userNickId }) {
-  console.log(datos);
+
   function createData(
     player,
     summonerName,

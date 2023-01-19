@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import UserConsumer from "../hooks/useDatos";
 import axios from "axios";
 
-const apiEndpoint = "http://localhost:3000/api/favorites/create";
+const apiEndpoint = `${process.env.REACT_APP_SERVER}/api/favorites/create/`;
 
 export default function BasicButtonsSave({
   datosFav,

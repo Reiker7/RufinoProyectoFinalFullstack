@@ -16,8 +16,6 @@ import BasicButtonsChange from "../common/BasicButtonsChange";
 
 
 
-const apiEndpoint = "http://localhost:3000/api/favorite/get/Agurin";
-
 function Private(props) {
   const [input, setInput] = useState("");
   const [datos, setDatos] = useState(null);
@@ -28,7 +26,7 @@ function Private(props) {
   const [user, setUser] = UserConsumer();
 
   const apiEndpoint =
-    "http://localhost:3000/api/favorites/get/" + user.nickname;
+  `${process.env.REACT_APP_SERVER}/api/favorites/get/` + user.nickname;
 
   useEffect(() => {
     const loggedUserJson = window.localStorage.getItem("loggedUser");

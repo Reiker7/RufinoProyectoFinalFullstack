@@ -23,10 +23,10 @@ function Register() {
       email: email,
       password: password,
     };
-
+    
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/users/create",
+        `${process.env.REACT_APP_SERVER}/api/users/create/`,
         datouser
       );
       setExito(

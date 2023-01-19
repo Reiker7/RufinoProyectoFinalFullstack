@@ -16,6 +16,7 @@ function Games() {
   const [gamesId, setGamesId] = useState(0);
   const [gamesIdFin, setGamesIdFin] = useState(4);
   const [sumaId, setSumaId] = useState(1);
+  const [slice, setSlice] = useState(null);
  
   
   const nickname = JSON.parse(localStorage.getItem("loggedUser")).nickname
@@ -39,8 +40,12 @@ function Games() {
         `https://${server2}.api.riotgames.com/lol/match/v5/matches/by-puuid/${result}/ids?start=0&count=20&api_key=${process.env.REACT_APP_LOL}`
       )
       .catch((err) => console.log("Error:", err));
-
+      
+    setSlice(response.data)
+    
     getGamesID(response.data.slice(gamesId, gamesIdFin));
+    
+    console.log(slice)
   };
   const getGamesID = async (result) => {
     const champArr = [];
@@ -64,7 +69,8 @@ function Games() {
     const valor = 4;
     setGamesId(valor * (value - 1));
     setGamesIdFin(valor * value);
-    getAllChamp();
+
+    getGamesID(slice.slice(gamesId, gamesIdFin));
   };
   // console.log(league)
   return (
@@ -92,7 +98,7 @@ function Games() {
             alignItems="flex-start"
           >
             {league.map((league1) => (
-              <CardGame key={league1.gameCreation} datos={league1} nickname={nickname} userNickId={nickgame}/>
+              <CardGame key={league1.gameId} datos={league1} nickname={nickname} userNickId={nickgame}/>
             ))}
           </Grid>
         </div>

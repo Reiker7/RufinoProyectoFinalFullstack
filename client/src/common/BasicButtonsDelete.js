@@ -4,8 +4,8 @@ import Button from "@mui/material/Button";
 import UserConsumer from "../hooks/useDatos";
 import axios from "axios";
 
-const apiEndpointDelete = "http://localhost:3000/api/favorites/delete/";
-
+const apiEndpointDelete = `${process.env.REACT_APP_SERVER}/api/favorites/delete/`;
+console.log(apiEndpointDelete)
 export default function BasicButtonsDelete({
   datosFav,
   nickname,
