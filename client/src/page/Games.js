@@ -17,6 +17,7 @@ function Games() {
   const [gamesIdFin, setGamesIdFin] = useState(4);
   const [sumaId, setSumaId] = useState(1);
   const [slice, setSlice] = useState(null);
+  const [page, setPage] = React.useState(1);
  
   
   const nickname = JSON.parse(localStorage.getItem("loggedUser")).nickname
@@ -45,7 +46,7 @@ function Games() {
     
     getGamesID(response.data.slice(gamesId, gamesIdFin));
     
-    console.log(slice)
+
   };
   const getGamesID = async (result) => {
     const champArr = [];
@@ -67,10 +68,13 @@ function Games() {
 
   const handleChange = (event, value) => {
     const valor = 4;
-    setGamesId(valor * (value - 1));
-    setGamesIdFin(valor * value);
+    // setGamesId(valor * (value - 1));
+    // setGamesIdFin(valor * value);
 
-    getGamesID(slice.slice(gamesId, gamesIdFin));
+    getGamesID(slice.slice(valor * (value - 1), valor * value));
+
+ 
+    setPage(value);
   };
   // console.log(league)
   return (
