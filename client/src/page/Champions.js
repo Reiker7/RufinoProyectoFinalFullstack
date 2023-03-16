@@ -41,7 +41,7 @@ function Champions(props) {
     // console.log(">>champArr", champArr);
     setDatos(champArr);
     setFilter([...champArr.slice(0, 14)]);
-    setTimeout(() => setLoading(true), 1000);
+    setLoading(true)
   };
   const handleChange = (event, value) => {
     const valor = 14;
