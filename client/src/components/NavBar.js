@@ -1,5 +1,5 @@
 import "../style/NavBar.css";
-import lol1 from "../assets/images/lolLogoMini.jpg";
+import lol1 from "../assets/images/lolLogoMini77.jpg";
 import lol2 from "../assets/images/lolLogoBig.jpg";
 import { Link } from "react-router-dom";
 import UserConsumer from "../hooks/useDatos";
