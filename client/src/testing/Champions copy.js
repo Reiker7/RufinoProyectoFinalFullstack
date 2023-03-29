@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { riotapi } from "../config/Lolapi.js";
+import { riotapi, imagechampapi } from "../config/Lolapi.js";
 import CardLol from "../common/CardLol.js";
 import Pagination from "@mui/material/Pagination";
 import Load from "../assets/animated/load.gif";
@@ -22,10 +22,10 @@ function Champions(props) {
     const response = await axios
       .get(`${riotapi}/champion.json`)
       .catch((err) => console.log("Error:", err));
-
-    getSliceChampions(Object.values(response.data.data));
+    // console.log(">>allchamp", Object.values(response.data.data));
+    getChampData(Object.values(response.data.data));
   };
-  const getSliceChampions = async (result) => {
+  const getChampData = async (result) => {
     const champArr = [];
 
     const response = await Promise.all(
@@ -35,12 +35,13 @@ function Champions(props) {
           .then((result) => {
             champArr.push(result.data.data[champItems.id]);
           })
-          .then(()=>setDatos(champArr))
-          .then(()=>setFilter(champArr.slice(0, 14)))
-          .then(()=>setLoading(true))
           .catch((err) => console.log("Error:", err));
       })
     );
+    // console.log(">>champArr", champArr);
+    setDatos(champArr);
+    setFilter([...champArr.slice(0, 14)]);
+    setLoading(true)
   };
   const handleChange = (event, value) => {
     const valor = 14;
@@ -67,6 +68,7 @@ function Champions(props) {
                 number={number}
               />
             ))}
+            {console.log(filter)}
           </Grid>
         </div>
       ) : (
