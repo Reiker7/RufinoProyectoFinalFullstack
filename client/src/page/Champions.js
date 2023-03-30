@@ -21,9 +21,9 @@ function Champions(props) {
   const getAllChamp = async () => {
     const response = await axios
       .get(`${riotapi}/champion.json`)
-      .catch((err) => console.log("Error:", err));
-
-    getSliceChampions(Object.values(response.data.data));
+      .then(res=>getSliceChampions(Object.values(res.data.data)))
+      .catch((err) => console.log("Error:", err))
+    ;
   };
   const getSliceChampions = async (result) => {
     const champArr = [];
@@ -53,7 +53,7 @@ function Champions(props) {
       {loading ? (
         <div className="main">
           <Pagination
-            count={10}
+            count={12}
             onChange={handleChange}
             color="primary"
             style={{ backgroundColor: "var(--color-white)" }}
