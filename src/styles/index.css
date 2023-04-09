@@ -1,0 +1,27 @@
+@import "./normalizer.css";
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-color: rgba(15, 24, 33, 1);
+  --bg-color-lol-dark: #111111;
+  --bg-color-lol-light: #282828;
+  --bg-color-gold: #b89139;
+  --text-color-gold: #9f9b8d;
+  --text-color: #f9f9f9;
+  --main-color: #0d1b25;
+}

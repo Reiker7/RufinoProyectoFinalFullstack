@@ -1,0 +1,145 @@
+.mainLogin {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+}
+
+.loginBox {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  width: 650px;
+  height: 600px;
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.loginBox h2 {
+  font-size: 2em;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.inputBox {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.inputBox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: var(--text-color);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: var(--text-color);
+  padding: 0 35px 0 5px;
+}
+
+.inputBox input:focus ~ label {
+  color: var(--bg-color-gold);
+}
+.inputBox input:valid ~ label {
+  top: -5px;
+}
+
+.inputBox .icon {
+  color: var(--text-color);
+  position: absolute;
+  right: 8px;
+  line-height: 57px;
+  font-size: 1.2em;
+}
+
+.loginBox .iconTop {
+  color: var(--text-color);
+  font-size: 2.7em;
+  position: absolute;
+  transform: translateY(-190px);
+  color: var(--text-color);
+}
+
+.loginBox img {
+  width: 7em;
+  position: absolute;
+  transform: translateY(-195px);
+  color: var(--text-color);
+}
+
+.containerBackRight {
+  position: absolute;
+  transform: translateX(20px);
+  width: 600px;
+  height: 500px;
+  background: var(--bg-color-gold);
+  border-radius: 30% 70% 70% 30% / 30% 30% 80% 70%;
+}
+
+.btnL {
+  width: 100%;
+  height: 40px;
+  background-color: var(--bg-color-gold);
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.btnL:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color-gold);
+}
+
+.loginBox .registerLink {
+  font-size: 0.9em;
+  color: var(--text-color);
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.registerLink a {
+  font-size: 0.9em;
+  color: var(--bg-color-gold);
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.iconError {
+  color: var(--text-color);
+  font-size: 1.5em;
+  transform: translate(140px, -20px);
+}
+
+.btnL i {
+  font-size: 1.2em;
+  color: gainsboro;
+  transform: translateX(0.5rem);
+}

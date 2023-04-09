@@ -1,0 +1,103 @@
+.header {
+  background: var(--bg-color-lol-dark);
+  color: var(--text-color);
+  height: 5vh;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+  margin-left: 2rem;
+  height: 3.2vh;
+}
+
+#menu-icon {
+  display: none;
+}
+
+.navbar {
+  margin: 2rem;
+  text-align: end;
+  vertical-align: center;
+  opacity: 100%;
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 12px 10px;
+  transition: background 0.5s;
+}
+
+.btnR {
+  color: var(--text-gold);
+  text-shadow: 1px 1px 2px var(--bg-color-lol-dark);
+  text-decoration: none;
+  transition: background 0.5s;
+  padding: 0 0.5rem;
+}
+.btnR:hover {
+  cursor: pointer;
+  color: var(--bg-color-gold);
+  /* box-shadow: inset 0 0px 10px 5px var(--bg-color-gold); */
+  transition: background 0.5s;
+  border-bottom: solid 1px var(--bg-color-gold);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+#nav-close {
+  color: var(--bg-color-gold);
+  font-size: 4rem;
+  cursor: pointer;
+  display: none;
+}
+
+.btnLogout {
+  color: var(--bg-color-gold);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: inline-block;
+    margin-right: 1.2rem;
+    font-size: 1.8rem;
+  }
+  .navbar {
+    position: fixed;
+    top: -32px;
+    left: -1100%;
+    background-color: var(--bg-color-lol-light);
+    width: 35rem;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar.active {
+    left: -32px;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+
+  #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .btnR:hover {
+    border-bottom: 0px;
+    padding: 0;
+  }
+}

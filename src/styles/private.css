@@ -1,0 +1,135 @@
+.main-load {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 90%;
+}
+
+
+.main-private {
+  background-color: var(--bg-color-lol-light);
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  min-height: 95vh;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-top {
+  z-index: 1;
+  background: var(--bg-color-lol-dark);
+  height: 5vh;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 90vh;
+  opacity: 95%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 14%,
+    rgba(29, 28, 28, 0.9473039215686274) 100%
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-top input {
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.panel-top div {
+  margin: auto 5%;
+}
+
+.panel-main {
+  margin: 10vh auto 5vh ;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.panel-main .main-grid {
+  color: var(--text-color);
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, 700px);
+  justify-content: center;
+}
+
+.btnP {
+  background-color: var(--bg-color-gold);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--bg-color-lol-dark);
+  font-size: 1rem;
+}
+.btnP:hover {
+  background-color: var(--text-color-gold);
+  transition: 0.2s;
+  font-size: 1.02rem;
+}
+
+.btnP i {
+  transform: translateY(2px);
+}
+
+.userInfo strong {
+  position: relative;
+  right: 10px;
+  bottom: 12px;
+  color: var(--text-color-gold);
+
+}
+.userInfo span {
+  position: relative;
+  left: 10px;
+  font-weight: bold;
+  bottom: 12px;
+  color: var(--text-color-gold);
+
+}
+.userInfo img {
+  width: 4vh;
+  border-radius: 50%;
+  border: 2px solid var(--bg-color-gold);
+}
+
+.btnC {
+  border-radius: 1.2rem;
+  margin: .1rem;
+  padding: .1rem;
+  cursor: pointer;
+
+}
+.btnC:hover {
+  background-color: goldenrod;
+  color: whitesmoke;
+  padding: .1rem;
+
+}
+
+.gameMini {
+  position: relative;
+  left: 20vw;
+
+}
+
+.gameMini img {
+margin: 5vw;
+  width: 20vw;
+}

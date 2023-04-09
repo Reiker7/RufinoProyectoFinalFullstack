@@ -1,0 +1,96 @@
+.main-load {
+  background-color: var(--main-color);
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 90%;
+}
+
+.main-load img {
+  width: 200px;
+}
+.main-center {
+}
+
+.main-champion {
+  /* padding: 4rem 10vw; */
+  background-color: var(--bg-color-lol-light);
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  min-height: 95vh;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+}
+.main-champion .main-grid {
+  color: var(--text-color);
+  display: grid;
+  padding: 3rem;
+  width: 90vw;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  justify-content: center;
+}
+
+.main-champion .main-grid .card-champion {
+  background-size: cover;
+  height: 400px;
+  background-color: var(--bg-color-lol-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-champion .main-grid .card-champion:hover {
+  background-size: 120%;
+}
+
+.content-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%;
+  opacity: 80%;
+  background: var(--bg-color-lol-dark);
+  height: 4rem;
+  width: 100%;
+  bottom: 0;
+}
+.content-name span {
+  color: var(--text-color-gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.content-name span::first-letter {
+  color: var(--bg-color-gold);
+}
+
+.content-name i {
+  font-size: 1.5rem;
+  color: var(--bg-color-gold);
+}
+.content-name i:hover {
+  font-size: 1.5rem;
+  color: var(---text-color-gold);
+}
+
+.main-champion .text-info {
+  padding: 1.5rem;
+  background-color: black;
+  opacity: 80%;
+  min-height: 336px;
+}
+
+.main-champion .text-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+

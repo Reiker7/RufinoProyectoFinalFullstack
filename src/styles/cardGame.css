@@ -1,0 +1,103 @@
+.card-game {
+  color: var(--bg-color-lol-dark);
+  opacity: 95%;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+
+}
+
+.card-game table {
+  border: .1px solid whitesmoke;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px var(--text-color-gold),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  /* border-collapse: collapse; */
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+  width: 700px;
+  opacity: 90%;
+
+}
+
+
+.card-game table th {
+  background: gainsboro;
+  width: auto;
+  height: 50px;
+  
+}
+.card-game table th:first-child {
+  width: 28%;
+}
+
+.card-game table td {
+  height: 30px;
+}
+
+.teamblueInfo td{
+  text-align: center;
+  background: #FFFFFF;
+  color: steelblue;
+}
+
+
+.teamredInfo td{
+  text-align: center;
+  background: #FFFFFF; 
+  color: firebrick;
+}
+
+.teamblue td{
+  text-align: center;
+  background: #EEF2FE 
+}
+
+.teamblue td:nth-child(2){
+  padding-left: 5px;
+  text-align: left;
+  background: #EEF2FE 
+}
+
+
+.teamred td{
+  text-align: center;
+  background: #FCF2F3 
+}
+
+.teamred td:nth-child(2){
+  padding-left: 5px;
+  text-align: left;
+}
+
+.teamblue img {
+  border-radius: 50%;
+  width: 20px;
+  position: relative;
+  top: 2px;
+}
+.teamblue img:hover::before {
+  content: "a";
+}
+
+
+.teamred img {
+  border-radius: 50%;
+  width: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.btnB {
+  opacity: 70%;
+  color: brown;
+  border: 1px solid brown;
+  border-radius: .8rem;
+  margin: 0.2rem;
+  padding: 0.3rem;
+}
+.btnB:hover {
+  transition: 0.2s;
+  color: black;
+  background: lightcoral;
+}

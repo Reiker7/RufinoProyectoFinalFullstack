@@ -1,0 +1,117 @@
+.games-main {
+  background-color: var(--bg-color-lol-light);
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  min-height: 95vh;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+}
+.gamesP-top {
+  z-index: 1;
+  background: var(--bg-color-lol-dark);
+  height: 5vh;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 90vh;
+  opacity: 95%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 14%,
+    rgba(29, 28, 28, 0.9473039215686274) 100%
+  );
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gamesP-main {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-gridG {
+  color: var(--text-color);
+  display: grid;
+  grid-gap: 3rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 700px);
+  justify-content: center;
+}
+
+
+.gameMiniG {
+  position: relative;
+  left: 20vw;
+
+}
+
+.gameMiniG img {
+margin: 5vw;
+  width: 20vw;
+}
+
+.buttons span {
+  margin-left: 20px;
+font-size: .9em;
+
+}
+.gamesP-top div {
+  margin: auto 0.4rem;
+  color: var(--text-color);
+}
+
+.btnPage {
+  margin: auto .4rem;
+  font-size: 0.8em;
+  width: 25px;
+  height: 25px;
+  background: var(--bg-color-lol-dark);
+  border-radius: 50%;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+  inset 3em 3em 3em rgba(255,255,255,0.1),
+        0 0  0 1px rgba(255,255,255,.3),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.btnPage:hover {
+cursor: pointer;
+background: lightgoldenrodyellow;
+color: black;
+}
+.btnPage.active {
+  cursor: pointer;
+  background: goldenrod;
+  color: black;
+  box-shadow: 0 0  0 1px rgba(255,255,255,.9);
+  }
+.buttons {
+  width: 500px;
+  display: flex;
+  padding-right: 20px;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.buttons span {
+font-size: 1em;
+position: relative;
+left: -10px;
+}

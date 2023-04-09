@@ -1,0 +1,121 @@
+.info-load {
+    background-color: var(--main-color);
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+  }
+  
+  .info-load img {
+    height: 40vh;
+    width: 40vh;
+  } 
+  .main-info {
+    padding: 4rem ;
+    background-color: var(--bg-color-lol-light);
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  
+    min-height: 95vh;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+
+
+  .info-card {
+   
+  }
+
+  .info-picture {
+    height: 550px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background-size: cover;
+  }
+
+  .info-picture i {
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+  
+  .info-picture i:hover {
+
+    color: var(--bg-color-gold);
+
+  }
+
+  .info-text {
+    text-align: center;
+    height: 500px;
+    width: 50%;
+  }
+  .info-text h1 {
+    color: var(--bg-color-gold);
+    transform: translateY(-30px);
+    text-shadow: 1px 1px 1px black;
+  }
+  .info-text h2 {
+    transform: translateY(-15px);
+    text-shadow: .7px .7px 2px var(--bg-color-gold);
+  }
+  .info-text a {
+    z-index: 1;
+    position: relative;
+    left: 45%;
+    background: var(--bg-color-gold);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .info-text p {
+    font-size: 0.9rem;
+    margin: .5rem;
+    background-color: rgba(0, 0, 0, .03);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    
+  }
+
+  .skills span {
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    border-radius: 20% 10%;
+    margin: auto .5rem;
+    opacity: 80%;
+    cursor: pointer;
+  }
+
+  .skills span:hover {
+    opacity: 100%;
+  }
+  
+  .skills {
+    margin: 2.5rem;
+
+  }
+
+ 
