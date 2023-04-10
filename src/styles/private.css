@@ -184,4 +184,7 @@ margin: 5vw;
   justify-content: space-around;
   height: 4vh;
 }
+.panel-top {
+  top: 5vh;
+}
 }

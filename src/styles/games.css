@@ -118,6 +118,7 @@
 
   .gamesP-top {
     justify-content: center;
+    top: 5vh;
   }
   .buttons {
     width: 50vw;
@@ -140,4 +141,5 @@
     color: whitesmoke;
 
   }
+
 }
