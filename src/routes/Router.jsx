@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 import PublicLayout from "../layouts/PublicLayout";
 import Home from "../page/Home"
@@ -12,7 +12,7 @@ import ProtectedRoute from "../hooks/ProtectedRoute";
 import Info from "../page/Info";
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <PublicLayout />,
