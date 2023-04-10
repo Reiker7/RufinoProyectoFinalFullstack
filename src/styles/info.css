@@ -119,3 +119,15 @@
   }
 
  
+  @media (max-width: 768px) {
+
+    .main-info {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .info-text {
+      width: 85vw;
+    }
+  }
+  
