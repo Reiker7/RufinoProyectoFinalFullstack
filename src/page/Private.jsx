@@ -72,10 +72,10 @@ const getLoadGames = async () => {
 
 
 
-      navigate("/");
+      navigate("/games");
       setTimeout(function () {
         navigate("/private");
-      }, 50);
+      }, 150);
    
     }
     else {alert("El nick debe ser mayor de 3 letras")}
