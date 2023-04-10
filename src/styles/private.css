@@ -133,3 +133,16 @@
 margin: 5vw;
   width: 20vw;
 }
+
+
+@media (max-width: 768px) {
+ .panel-top div:nth-child(2) {
+    display: none;
+  }
+
+.panel-main .main-grid {
+  grid-template-columns: repeat(auto-fill, 100vw);
+
+}
+
+}

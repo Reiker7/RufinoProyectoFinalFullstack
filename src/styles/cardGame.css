@@ -101,3 +101,20 @@
   color: black;
   background: lightcoral;
 }
+
+@media (max-width: 768px) {
+
+
+  .card-game table {
+    width: 100vw;
+   
+  }
+  .card-game table th:nth-child(5) {
+    display: none;
+
+  }
+  .card-game table td:nth-child(5) {
+    display: none;
+
+  }
+}

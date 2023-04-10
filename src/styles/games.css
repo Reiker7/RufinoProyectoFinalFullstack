@@ -52,22 +52,19 @@
   justify-content: center;
 }
 
-
 .gameMiniG {
   position: relative;
   left: 20vw;
-
 }
 
 .gameMiniG img {
-margin: 5vw;
+  margin: 5vw;
   width: 20vw;
 }
 
 .buttons span {
   margin-left: 20px;
-font-size: .9em;
-
+  font-size: 0.9em;
 }
 .gamesP-top div {
   margin: auto 0.4rem;
@@ -75,7 +72,7 @@ font-size: .9em;
 }
 
 .btnPage {
-  margin: auto .4rem;
+  margin: auto 0.4rem;
   font-size: 0.8em;
   width: 25px;
   height: 25px;
@@ -85,22 +82,20 @@ font-size: .9em;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:
-  inset 3em 3em 3em rgba(255,255,255,0.1),
-        0 0  0 1px rgba(255,255,255,.3),
-        0.3em 0.3em 1em rgba(0,0,0,0.3);
+  box-shadow: inset 3em 3em 3em rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .btnPage:hover {
-cursor: pointer;
-background: lightgoldenrodyellow;
-color: black;
+  cursor: pointer;
+  background: lightgoldenrodyellow;
+  color: black;
 }
 .btnPage.active {
   cursor: pointer;
   background: goldenrod;
   color: black;
-  box-shadow: 0 0  0 1px rgba(255,255,255,.9);
-  }
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
 .buttons {
   width: 500px;
   display: flex;
@@ -111,7 +106,28 @@ color: black;
 }
 
 .buttons span {
-font-size: 1em;
-position: relative;
-left: -10px;
+  font-size: 1em;
+  position: relative;
+  left: -10px;
+}
+
+@media (max-width: 768px) {
+  .gamesP-top div:nth-child(2) {
+    display: none;
+  }
+
+  .gamesP-top {
+    height: 5vh;
+    justify-content: center;
+  }
+  .buttons {
+    width: 90%;
+  }
+  .buttons span {
+    display: none;
+  }
+
+  .main-gridG {
+    grid-template-columns: repeat(auto-fill, 100vw);
+  }
 }
