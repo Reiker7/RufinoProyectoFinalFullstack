@@ -27,7 +27,7 @@
 }
 
 .panel-top {
-  z-index: 1;
+  z-index: 300;
   background: var(--bg-color-lol-dark);
   height: 5vh;
   position: absolute;
