@@ -112,7 +112,7 @@
 }
 
 @media (max-width: 768px) {
-  .gamesP-top div:nth-child(2) {
+  .top-center-resp {
     display: none;
   }
 

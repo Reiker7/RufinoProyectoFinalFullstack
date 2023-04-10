@@ -80,7 +80,7 @@ function Games() {
             <i className="bx bx-arrow-back"></i> Volver
           </Link>
         </div>
-        <div>{error}</div>
+        <div top-center-resp>{error}</div>
         <div className="pages">
           <div className="buttons"><span>20 Partidas</span>
           <Pagination totalPosts={20}

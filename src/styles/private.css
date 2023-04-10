@@ -136,7 +136,7 @@ margin: 5vw;
 
 
 @media (max-width: 768px) {
- .panel-top div:nth-child(2) {
+ .top-center-resp {
     display: none;
   }
 

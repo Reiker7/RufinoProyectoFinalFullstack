@@ -93,7 +93,7 @@ const getLoadGames = async () => {
                 Partidas
               </Link>
             </div>
-            <div>
+            <div className="top-center-resp">
               <input
                 placeholder="Cambiar nick del juego"
                 onChange={(event) => setInput(event.target.value)}
