@@ -117,11 +117,11 @@
   }
 
   .gamesP-top {
-    height: 5vh;
     justify-content: center;
   }
   .buttons {
-    width: 90%;
+    width: 50vw;
+
   }
   .buttons span {
     display: none;
@@ -129,5 +129,15 @@
 
   .main-gridG {
     grid-template-columns: repeat(auto-fill, 100vw);
+  }
+  .btnPage {
+    margin: auto 0.4rem;
+    font-size: 0.8em;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-color-lol-dark);
+    border-radius: 50%;
+    color: whitesmoke;
+
   }
 }

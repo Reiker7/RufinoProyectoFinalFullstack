@@ -145,4 +145,43 @@ margin: 5vw;
 
 }
 
+.btnP {
+  background-color: var(--bg-color-gold);
+  padding: .1rem;
+  border-radius: 1rem;
+  color: var(--bg-color-lol-dark);
+  font-size: 1rem;
+}
+.userInfo img {
+  margin: auto 3px;
+  width: 3vh;
+  border-radius: 50%;
+  border: solid var(--bg-color-gold);
+}
+.userInfo strong {
+  font-size: 0.9em;
+  color: var(--text-color-gold);
+  right: 0px;
+  bottom: 0px;
+
+}
+.userInfo strong i {
+  
+}
+.userInfo span {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--text-color-gold);
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+}
+.userInfo {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 4vh;
+}
 }
