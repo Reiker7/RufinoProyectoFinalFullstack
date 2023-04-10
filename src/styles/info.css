@@ -124,10 +124,12 @@
     .main-info {
       display: flex;
       flex-direction: column-reverse;
+      
     }
 
     .info-text {
       width: 85vw;
+      margin-bottom:14rem;
     }
   }
   
